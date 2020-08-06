@@ -23,9 +23,13 @@ del passPhrase
 
 Example output:
 >poor
+
 >longitudinal
+
 >Yankee
+
 >garden
+
 >Your passphrase is poorlongitudinalYankeegarden
 
 You can also specify a different number of words. 
@@ -44,6 +48,7 @@ python -m randopass
 
 Example output:
 > Passphrase:
+
 >  brilliancelaboursweetstruggle
 
 With parameter:
@@ -53,4 +58,5 @@ python -m randopass 10
 
 Example output:
 > Passphrase:
+
 >  crusadeelectviablesystembowelpushmarketingflatwareabsorbtrain 
