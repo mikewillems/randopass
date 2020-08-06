@@ -8,6 +8,11 @@ The problem with users selecting passphrases is that people have limited vocabul
 
 randopass uses the secrets library and a list of 3254 (at this time) words acquired from a hack to a web app using the Wordnik API. The default 4-word phrase then truly represents one of over 112 trillion combinations, or nearly 47 bits of randomness.
 
+### Installation:
+```bash
+python -m pip install randopass
+```
+
 ### As a library:
 
 ```python
@@ -42,23 +47,24 @@ Example output:
 
 ### As a CLI tool for yourself:
 
+Default usage:
 ```python
-python -m randopass
+$ python -m randopass
 ```
 
 Example output:
-```
+```bash
 Passphrase:
  brilliancelaboursweetstruggle
 ```
 
 With parameter:
 ```python
-python -m randopass 10
+$ python -m randopass 10
 ```
 
 Example output:
-```
+```bash
 Passphrase:
  crusadeelectviablesystembowelpushmarketingflatwareabsorbtrain
 ```
