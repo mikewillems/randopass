@@ -22,15 +22,13 @@ del passPhrase
 ```
 
 Example output:
->poor
-
->longitudinal
-
->Yankee
-
->garden
-
->Your passphrase is poorlongitudinalYankeegarden
+```
+poor
+longitudinal
+Yankee
+garden
+Your passphrase is poorlongitudinalYankeegarden
+```
 
 You can also specify a different number of words. 
 ```python
@@ -38,7 +36,9 @@ print(getPass(6))
 ```
 
 Example output:
->['option', 'ideology', 'variety', 'dedicate', 'warm', 'timetable']
+```
+['option', 'ideology', 'variety', 'dedicate', 'warm', 'timetable']
+```
 
 ### As a CLI tool for yourself:
 
@@ -47,9 +47,10 @@ python -m randopass
 ```
 
 Example output:
-> Passphrase:
-
->  brilliancelaboursweetstruggle
+```
+Passphrase:
+ brilliancelaboursweetstruggle
+```
 
 With parameter:
 ```python
@@ -57,6 +58,7 @@ python -m randopass 10
 ```
 
 Example output:
-> Passphrase:
-
->  crusadeelectviablesystembowelpushmarketingflatwareabsorbtrain 
+```
+Passphrase:
+ crusadeelectviablesystembowelpushmarketingflatwareabsorbtrain
+```
