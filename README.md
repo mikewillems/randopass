@@ -1,4 +1,4 @@
-RandoPass
+randopass
 ===
 
 Generate memorable but cryptographically strong random word passphrases for your users. 
