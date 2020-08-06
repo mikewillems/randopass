@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<4", "pip >=20.2.1", "setuptools >=49.2.1"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "randopass"
+author = "Mike Willems"
+author-email = "mikewillems@users.noreply.github.com"
+home-page = "https://github.com/mikewillems"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
