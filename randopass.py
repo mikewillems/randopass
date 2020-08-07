@@ -1,10 +1,11 @@
-"""This is a docstring"""
+"""
+randopass: strong random English-word passphrases
+"""
 __version__="0.0.1"
 
-
+"""secrets package is used for randomness"""
 import secrets
 
-"""This is also a docstring"""
 def getPass(length=4):
     """returns passphrase composed of _length_ random words (4 by default)"""
     return [secrets.choice(_randomWordsArr) for i in range(length)]
