@@ -17,7 +17,7 @@ setup(
     author='Mike Willems',
     author_email='themikewillems@gmail.com',
     url='https://github.com/mikewillems/randopass',
-    license='MIT',
+    license=license,
     packages=find_packages(exclude=('tests', 'docs')),
     entry_points={
         'console_scripts': ['randopass=command_line:main'],
