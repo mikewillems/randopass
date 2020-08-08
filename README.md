@@ -49,7 +49,7 @@ Example output:
 
 Default usage:
 ```python
-$ randopass
+$ python -m randopass
 ```
 
 Example output:
@@ -60,7 +60,7 @@ Passphrase:
 
 With parameter:
 ```python
-$ randopass 10
+$ python -m randopass 10
 ```
 
 Example output:
