@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     name='randopass',
-    version='0.0.3',
+    version='0.0.5',
     description='Generate easy but secure passphrases',
     long_description=readme,
     author='Mike Willems',
