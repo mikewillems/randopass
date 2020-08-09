@@ -51,6 +51,10 @@ Default usage:
 ```python
 $ python -m randopass
 ```
+or
+```bash
+randopass
+```
 
 Example output:
 ```bash
@@ -61,6 +65,10 @@ Passphrase:
 With parameter:
 ```python
 $ python -m randopass 10
+```
+or
+```bash
+randopass 10
 ```
 
 Example output:

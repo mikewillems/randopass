@@ -8,7 +8,7 @@ package_dir = getcwd()+path.sep
 
 with open(package_dir + 'README.md') as f:
     readme = f.read()
-
+    
 with open(package_dir + 'LICENSE') as f:
     license = f.read()
 
@@ -17,7 +17,7 @@ with open('randopass/randopass.py') as f:
     '^__version__\s*=\s*"(.*)"',
     f.read(),
     re.M
-    ).group(1)
+    ).group(1).strip('\n')
 
 print(find_packages(exclude=('tests', 'docs')))
 
@@ -25,7 +25,7 @@ setup(
     name='randopass',
     version=version,
     description='Generate easy but secure passphrases',
-    long_description=readme,
+    long_description="The long description isn't working, so please checkout [the github page](https://github.com/mikewillems/randopass/) for full instructions.",
     long_description_content_type="text/markdown",
     author='Mike Willems',
     author_email='themikewillems@gmail.com',
