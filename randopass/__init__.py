@@ -1,4 +1,6 @@
-'''This module makes randopass accessible without a nested import.'''
+'''
+randopass: strong random English-word passphrases
+'''
 
 from randopass.randopass import getPass, getVersion
 
