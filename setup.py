@@ -2,12 +2,14 @@
 
 from setuptools import setup, find_packages
 import re
+from os import getcwd, path
 
+package_dir = getcwd()+path.sep
 
-with open('README.md') as f:
+with open(package_dir + 'README.md') as f:
     readme = f.read()
 
-with open('LICENSE') as f:
+with open(package_dir + 'LICENSE') as f:
     license = f.read()
 
 with open('randopass/randopass.py') as f:
