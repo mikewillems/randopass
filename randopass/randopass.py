@@ -1,7 +1,7 @@
 """
 randopass: strong random English-word passphrases
 """
-__version__="0.0.7"
+__version__="0.0.8"
 
 """secrets package is used for randomness"""
 import secrets
