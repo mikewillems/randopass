@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
+import re
 
 
 with open('README.md') as f:
@@ -9,9 +10,18 @@ with open('README.md') as f:
 with open('LICENSE') as f:
     license = f.read()
 
+with open('randopass/randopass.py') as f:
+    version = re.search(
+    '^__version__\s*=\s*"(.*)"',
+    f.read(),
+    re.M
+    ).group(1)
+
+print(find_packages(exclude=('tests', 'docs')))
+
 setup(
     name='randopass',
-    version='0.0.5',
+    version=version,
     description='Generate easy but secure passphrases',
     long_description=readme,
     author='Mike Willems',
@@ -20,10 +30,11 @@ setup(
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),
     entry_points={
-        'console_scripts': ['randopass=command_line:main'],
+        'console_scripts': ['randopass=randopass.randopass:main'],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
