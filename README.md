@@ -53,13 +53,13 @@ $ python -m randopass
 ```
 or
 ```bash
-randopass
+$ randopass
 ```
 
 Example output:
 ```bash
 Passphrase:
- brilliancelaboursweetstruggle
+brilliancelaboursweetstruggle
 ```
 
 With parameter:
@@ -68,7 +68,7 @@ $ python -m randopass 10
 ```
 or
 ```bash
-randopass 10
+$ randopass 10
 ```
 
 Example output:
