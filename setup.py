@@ -8,7 +8,6 @@ package_dir = getcwd()+path.sep
 
 with open(package_dir + 'README.md') as f:
     readme = f.read()
-    print(readme)
 
 with open(package_dir + 'LICENSE') as f:
     license = f.read()
@@ -31,7 +30,7 @@ setup(
     author='Mike Willems',
     author_email='themikewillems@gmail.com',
     url='https://github.com/mikewillems/randopass',
-    license=license,
+    license='MIT',
     packages=find_packages(exclude=('tests', 'docs')),
     entry_points={
         'console_scripts': ['randopass=randopass.randopass:main'],
