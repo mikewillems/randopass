@@ -62,7 +62,8 @@ Passphrase:
 brilliancelaboursweetstruggle
 ```
 
-With parameter:
+---
+Usage with parameter:
 ```python
 $ python -m randopass 10
 ```
