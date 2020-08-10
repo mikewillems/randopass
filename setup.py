@@ -19,8 +19,6 @@ with open('randopass/randopass.py') as f:
     re.M
     ).group(1).strip('\n')
 
-print(find_packages(exclude=('tests', 'docs')))
-
 setup(
     name='randopass',
     version=version,
