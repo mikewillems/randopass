@@ -31,7 +31,7 @@ setup(
     # long_description_content_type='text/markdown',
     author='Mike Willems',
     author_email='themikewillems@gmail.com',
-    url='https://github.com/mikewillems/randopass',
+    url='https://github.com/mikewillems/randopass/',
     license='MIT',
     packages=find_packages(exclude=('tests', 'docs')),
     include_package_data = True,
