@@ -1,7 +1,7 @@
 """
 randopass: strong random English-word passphrases
 """
-__version__="0.1.4"
+__version__="0.1.5"
 
 """secrets package is used for randomness"""
 import secrets
@@ -27,9 +27,9 @@ def main():
         try:
             numWords = int(arg)
         except:
-            if arg in capitalizations:
+            if arg.lower() in capitalizations:
                 capitalization = arg
-            elif arg in languages:
+            elif arg.lower() in languages:
                 language = arg
             else: 
                 print("invalid argument", file=sys.stderr)
