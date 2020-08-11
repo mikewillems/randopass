@@ -1,7 +1,7 @@
 """
 randopass: strong random English-word passphrases
 """
-__version__="0.1.5"
+__version__="0.1.6"
 
 """secrets package is used for randomness"""
 import secrets
@@ -11,7 +11,7 @@ from randopass.dictionaries import english
 from randopass.dictionaries import english_simple
 from randopass.dictionaries import afrikaans
 
-capitalizations = ['lower', 'capital', 'upper', 'any', 'wild']
+capitalizations = ['lower', 'capital', 'upper', 'mixed', 'wild']
 languages = ['english', 'english_simple', 'afrikaans']
 dictionary = english.words()
 
@@ -49,10 +49,10 @@ def getPass(length=4, capitalization=capitalizations[0], language=languages[0]):
             return string.upper()
         elif capitalization == "capital":
             return string.capitalize()
-        elif capitalization == "any":
-            return capitalize(string, secrets.choice(list(Capitalization)[:-2]))
+        elif capitalization == "mixed":
+            return capitalize(string, secrets.choice(capitalizations[:-2]))
         elif capitalization == "wild":
-            return ''.join([capitalize(char, secrets.choice(list(Capitalization)[:-2])) for char in string])
+            return ''.join([capitalize(char, secrets.choice(capitalizations[:-2])) for char in string])
         else:
             return string.lower()
 
