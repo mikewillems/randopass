@@ -3,6 +3,9 @@
 from setuptools import setup, find_packages
 import re
 from os import getcwd, path
+import pathlib
+
+here = pathlib.Path(__file__).parent.resolve()
 
 package_dir = getcwd()+path.sep
 
@@ -23,7 +26,8 @@ setup(
     name='randopass',
     version=version,
     description='Generate easy but secure passphrases',
-    long_description='The long description isn\'t working, so please checkout [the github page](https://github.com/mikewillems/randopass/) for full instructions.',
+    # long_description='The long description isn\'t working, so please checkout [the github page](https://github.com/mikewillems/randopass/) for full instructions.',
+    long_description = (here / 'README.md').read_text(encoding='utf-8'),
     long_description_content_type='text/markdown',
     author='Mike Willems',
     author_email='themikewillems@gmail.com',
