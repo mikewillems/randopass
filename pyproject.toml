@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core >=2,<4", "pip >=20.2.1", "setuptools >=49.2.1"]
+requires = ["flit_core >=2,<4", "pip >=20.2.1", "setuptools >=49.2.1", "importlib_resources >=3.0.0"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
