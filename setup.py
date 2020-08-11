@@ -5,12 +5,12 @@ import re
 from os import getcwd, path
 import pathlib
 
-here = pathlib.Path(__file__).parent.resolve()
+# here = pathlib.Path(__file__).parent.resolve()
 
 package_dir = getcwd()+path.sep
 
-with open(package_dir + 'README.md') as f:
-    readme = f.read()
+# with open(package_dir + 'README.md') as f:
+#     readme = f.read()
     
 with open(package_dir + 'LICENSE') as f:
     license = f.read()
@@ -26,9 +26,9 @@ setup(
     name='randopass',
     version=version,
     description='Generate easy but secure passphrases',
-    # long_description='The long description isn\'t working, so please checkout [the github page](https://github.com/mikewillems/randopass/) for full instructions.',
-    long_description = (here / 'README.md').read_text(encoding='utf-8'),
-    long_description_content_type='text/markdown',
+    long_description='The long description isn\'t working, so please checkout the github page: (https://github.com/mikewillems/randopass/) for full instructions.',
+    # long_description = (here / 'README.md').read_text(encoding='utf-8'),
+    # long_description_content_type='text/markdown',
     author='Mike Willems',
     author_email='themikewillems@gmail.com',
     url='https://github.com/mikewillems/randopass',

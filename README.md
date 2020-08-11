@@ -87,6 +87,7 @@ Passphrase:
 ```
 
 
+---
 ```bash
 $ python -m randopass upper 3
 ```
@@ -97,6 +98,7 @@ Passphrase:
  WHIRRSUBHARMONICSGOURMETS
 ```
 
+---
 ```bash
 $ randopass 6 capital
 ```
