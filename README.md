@@ -10,7 +10,7 @@ randopass uses the secrets library and a list of 58,110 (currently) English word
 
 Future development will enable use of a 3,254 common-word simple English dictionary from [https://www.wordnik.com/](Wordnik) and a list 51,478 words in Afrikaans - they're included in the source in case you want to switch manually.
 
-Phrases can be generated with lower case, Capital case, or UPPER case capitalization, and defaults to all words of the passphrase being lower case. You can also used mixed case, where the case of any word is randomly selected, adding another 2^n bits of randomness where n is the number of words. Just for fun, I've also thrown in a WiLD case which randomly capitalizes each character. This adds roughly 2^(6n) bits of randomness where n is again the number of words in the passphrase.
+Phrases can be generated with lower case, Capital case, or UPPER case capitalization, and defaults to all words of the passphrase being lower case. You can also used mixed case, where the case of any word is randomly selected, adding another ~1.6n bits of randomness where n is the number of words in the passphrase. Just for fun (don't do this in practice), I've also thrown in a WiLD case which randomly capitalizes each character. This adds ~6n bits of randomness where n is again word count.
 
 Special characters are not supported, as they run contrary to the point of the library.
 
